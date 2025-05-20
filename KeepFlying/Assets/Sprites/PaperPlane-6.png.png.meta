@@ -167,7 +167,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PaperPlane-6.png_0: -6247475633343101097
+      PaperPlane-6.png_1: -3416573098354304262
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
