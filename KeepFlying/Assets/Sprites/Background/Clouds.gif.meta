@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b3ec6b2affa46cb40bac27cd1ed0f8d5
+guid: 62d65f7b1a55acd44ac6cfaa0218a90a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4603657864169424435
-    second: PaperPlane-5.png_0
+      213: 7787332134898574984
+    second: New Piskel (8) (2)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PaperPlane-5.png_0
+      name: New Piskel (8) (2)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 7
-        width: 32
-        height: 18
+        x: 107
+        y: 128
+        width: 83
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dc97fb250958c10c0800000000000000
-      internalID: -4603657864169424435
+      spriteID: 8862d905159221c60800000000000000
+      internalID: 7787332134898574984
       vertices: []
       indices: 
       edges: []
@@ -144,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PaperPlane-5.png_0: -4603657864169424435
+      New Piskel (8) (2)_0: 7787332134898574984
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
