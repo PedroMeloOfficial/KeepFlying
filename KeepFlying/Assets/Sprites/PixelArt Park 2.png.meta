@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PixelArt Park 2_0: -2597743459770842911
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
