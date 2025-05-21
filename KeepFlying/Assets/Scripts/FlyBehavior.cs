@@ -37,7 +37,7 @@ public class FlyBehavior : MonoBehaviour
 
     private void Update()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame &&
+        if (Mouse.current.leftButton.wasPressedThisFrame || Input.GetKeyDown(KeyCode.Space) &&
             _transform.position.y <= _maxAltitude && _gameOver == false)
         {
             // 1) apply upward velocity

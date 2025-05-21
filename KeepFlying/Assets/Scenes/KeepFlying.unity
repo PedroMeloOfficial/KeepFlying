@@ -548,7 +548,7 @@ Transform:
   m_GameObject: {fileID: 358669393}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1614, y: -1.007, z: 0}
+  m_LocalPosition: {x: 0.53, y: -1.007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -861,6 +861,55 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &885957290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 885957292}
+  - component: {fileID: 885957291}
+  m_Layer: 0
+  m_Name: TreeSpawner2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &885957291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885957290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fefd7f0e3e43bb94da795f3b7e6086d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxTime: 3
+  _heightRange: 0
+  _obstacle: {fileID: 3426279147645706795, guid: b774a5e30a4211741a471fda89c99471, type: 3}
+  _audioSource: {fileID: 0}
+  _whooshSfx: {fileID: 0}
+--- !u!4 &885957292
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885957290}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2, y: -0.44, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &944654167
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,7 +1140,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1426944626}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1136,7 +1185,7 @@ GameObject:
   - component: {fileID: 1066382761}
   - component: {fileID: 1066382762}
   m_Layer: 0
-  m_Name: TreeSpawner
+  m_Name: TreeSpawner1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1169,7 +1218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fefd7f0e3e43bb94da795f3b7e6086d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxTime: 1.5
+  _maxTime: 3
   _heightRange: 0
   _obstacle: {fileID: 3426279147645706795, guid: 4c1beff1b3de3ef409848ce7e67f6809, type: 3}
   _audioSource: {fileID: 0}
@@ -1437,9 +1486,9 @@ RectTransform:
   - {fileID: 1379252000}
   m_Father: {fileID: 1045796281}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 408.7, y: 674}
+  m_AnchorMin: {x: 0.85, y: 0.95}
+  m_AnchorMax: {x: 0.85, y: 0.95}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1611187926
@@ -1676,7 +1725,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.1, y: -81}
+  m_AnchoredPosition: {x: 14.099976, y: -81}
   m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1779853677
@@ -1878,7 +1927,7 @@ Transform:
   m_GameObject: {fileID: 1812117528}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.114, y: 0.826, z: 0}
+  m_LocalPosition: {x: 0.07, y: 0.826, z: 0}
   m_LocalScale: {x: 2.1643393, y: 1.518397, z: 1.7330747}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2053,9 +2102,9 @@ RectTransform:
   - {fileID: 1722216240}
   m_Father: {fileID: 1045796281}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -289.2, y: 674}
+  m_AnchorMin: {x: 0.18, y: 0.95}
+  m_AnchorMax: {x: 0.18, y: 0.95}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1927415638
@@ -2436,6 +2485,7 @@ SceneRoots:
   - {fileID: 399106124}
   - {fileID: 358669398}
   - {fileID: 1066382761}
+  - {fileID: 885957292}
   - {fileID: 1779853681}
   - {fileID: 219366367}
   - {fileID: 944654169}
