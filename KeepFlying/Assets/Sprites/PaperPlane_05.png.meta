@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 4a93cc41052cba942aa024ea07416da4
+guid: b3ec6b2affa46cb40bac27cd1ed0f8d5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6247475633343101097
-    second: PaperPlane-6.png_0
-  - first:
-      213: -3416573098354304262
-    second: PaperPlane-6.png_1
+      213: -4603657864169424435
+    second: PaperPlane-5.png_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -78,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,34 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PaperPlane-6.png_0
+      name: PaperPlane-5.png_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 5
-        width: 32
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7570da313028c49a0800000000000000
-      internalID: -6247475633343101097
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PaperPlane-6.png_1
-      rect:
-        serializedVersion: 2
-        x: 2
         y: 7
-        width: 6
-        height: 6
+        width: 32
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: afa9f6b6ed4e590d0800000000000000
-      internalID: -3416573098354304262
+      spriteID: dc97fb250958c10c0800000000000000
+      internalID: -4603657864169424435
       vertices: []
       indices: 
       edges: []
@@ -168,8 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PaperPlane-6.png_0: -6247475633343101097
-      PaperPlane-6.png_1: -3416573098354304262
+      PaperPlane-5.png_0: -4603657864169424435
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
