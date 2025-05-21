@@ -11,31 +11,41 @@ public class FlyBehavior : MonoBehaviour
     [SerializeField] private float _maxAltitude = 1.1f;
 
     [Header("References")]
-    [SerializeField] private Animator _animator;     // Drag your Animator here in the Inspector
+    [SerializeField] private Animator _animator;      // your Animator
+    [SerializeField] private AudioSource _audioSource; // AudioSource component
+
+    [Header("SFX Clips")]
+    [SerializeField] private AudioClip _jumpSfx;      // jump sound
+    [SerializeField] private AudioClip _crumpleSfx;   // crumple sound
 
     private Rigidbody2D _rb;
     private Transform _transform;
+    private bool _gameOver;
 
     private void Start()
     {
+        _gameOver = false;
         _rb = GetComponent<Rigidbody2D>();
         _transform = transform;
 
-        // If you didn¡¯t hook it up in the Inspector, try to grab it at runtime:
         if (_animator == null)
-        {
             _animator = GetComponent<Animator>();
-            print("Got animator");
-        }
-            
+
+        if (_audioSource == null)
+            _audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
     {
         if (Mouse.current.leftButton.wasPressedThisFrame &&
-            _transform.position.y <= _maxAltitude)
+            _transform.position.y <= _maxAltitude && _gameOver == false)
         {
+            // 1) apply upward velocity
             _rb.velocity = Vector2.up * _velocity;
+
+            // 2) play jump SFX
+            if (_jumpSfx != null)
+                _audioSource.PlayOneShot(_jumpSfx);
         }
     }
 
@@ -47,9 +57,19 @@ public class FlyBehavior : MonoBehaviour
 
     private IEnumerator HandleCrash()
     {
+        _gameOver = true;
+
+        // 1) trigger crumple anim
         _animator.SetTrigger("Crumpled");
+
+        // 2) play crumple SFX
+        if (_crumpleSfx != null)
+            _audioSource.PlayOneShot(_crumpleSfx);
+
+        // 3) stop physics
         _rb.simulated = false;
-        // Wait for the length of the crumple clip:
+
+        // 4) wait a bit, then end game
         yield return new WaitForSeconds(0.05f);
         GameManager.Instance.GameOver();
     }
@@ -58,5 +78,4 @@ public class FlyBehavior : MonoBehaviour
     {
         StartCoroutine(HandleCrash());
     }
-
 }
